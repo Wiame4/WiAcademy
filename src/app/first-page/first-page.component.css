@@ -1,0 +1,920 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*********************** ESSENTIALS : **************************/
+
+* {
+  font-size: 18px; 
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/*********************** HOME : **************************/
+
+#home {
+  background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url("../images/bg.jpeg");
+  width : 100%;
+  height : 100vh;
+  background-size: cover;
+  background-position: center;
+  display : flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  text-align  : center;
+  padding-top : 40px; 
+}
+
+#home h1 {
+  color : #fff;
+  font-size : 2.2rem;
+  letter-spacing: 1px;
+}
+
+#home p {
+  width : 60%;
+  color : #fff;
+  font-size : 0.9rem;
+  line-height : 25px;
+  margin-top : 10px;
+  
+}
+#home .btn {
+  margin-top : 30px;
+}
+#home a {
+  text-decoration: none;
+  font-size : 0.9rem;
+  padding : 13px 35px;
+  background-color: #fff;
+  font-weight : 600; 
+  border-radius : 5px;
+}
+
+#home a.purple {
+  color : #fff;
+  background : #4F59D4; 
+  transition : 0.3s ease ;
+  margin-right : 2px;
+}
+
+#home a.purple:hover {
+  color : #4f59d4;
+  background : white;
+}
+
+#home a.orange {
+  color : #fff;
+  background : #ED6A00;
+  transition : 0.3s ease 
+
+}
+
+#home a.orange:hover {
+  color : #ED6A00;
+  background : #fff;
+}
+/*********************** SERVICES  : **************************/
+
+#services {
+  padding : 5vw 8vw 0 8vw;
+  text-align : center;
+  background-color: #F5F5F5;
+}
+
+#services .fea-base {
+  display : grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap : 1rem;
+  margin-top : 50px;
+
+
+}
+
+
+
+#services .fea-box {
+  background: #f9f9f9;
+  text-align : start;
+  padding : 25px;
+  cursor : pointer;
+  box-shadow : rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition : all 0.3s ease-in-out;
+  
+
+}
+
+#services h1 {
+  font-size : 40px;
+  font-weight : 600;
+  padding-bottom : 10px;
+  color : #4F59D4;
+}
+
+#services p {
+  font-size : 18px;
+  padding : 8px;
+}
+
+#services .fea-box i {
+  font-size : 2.3rem;
+  color : rgba(44,44,80); 
+  margin-bottom: 10px;
+  
+}
+
+#services .fea-box h3 {
+  font-size : 1.2rem;
+  font-weight: 600;
+  color : rgba(46,46,59);
+  padding : 13px 0 7px 0;
+
+}
+
+ 
+#services .fea-box p {
+  font-size : 1rem;
+  font-weight : 400;
+  color : rgba(70,70,87);
+}
+
+
+
+#services .fea-box:hover {
+  transform: translateY(-15px);
+}
+
+#services .fea-box:hover > :not(:hover) {
+  opacity : 0.5s;
+}
+
+
+/*********************** COURSES  : **************************/
+
+#course {
+  padding : 8vw 8vw 0 8vw;
+  text-align : center;
+
+}
+
+#course .course-box {
+  display : grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap :1rem;
+  margin-top : 50px;
+}
+
+#course .courses {
+  text-align : start;
+  height : 350px;
+  color : black;
+  position : relative;
+  padding : 10px; 
+  border-radius: 15px;
+  cursor : pointer;
+  margin-bottom: 50px;
+}
+
+#course .courses .details h6 {
+  padding-bottom : 6px;
+  text-decoration: none;
+}
+#course .courses img {
+  width : 100%;
+  height : 55%;
+  margin : 15px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 50px 30px 5px;
+  
+}
+
+#course h1 {
+  font-size : 40px;
+  font-weight : 600;
+  padding-bottom : 10px;
+  color : #ED6A00;
+}
+
+#course .subtitle p {
+  font-size : 18px;
+  padding : 8px;
+}
+#course .courses .details {
+  padding : 15px 15px 0 15px;
+}
+
+#course .courses .details i {
+  color : #000;
+  font-size : .9rem;
+}
+
+#course .courses .cost {
+  background-color:#4F59D4;
+  color : #fff;
+  line-height : 60px;
+  width : 70px;
+  height : 70px;
+  text-align : center;
+  border-radius: 50%;
+  position : absolute;
+  right : 15px; 
+  bottom : 120px;
+} 
+
+#course .courses .star i {
+ padding-left : 10px;
+}
+
+#course .courses .star span {
+  color : #2D2B38;
+  padding-left : 5px;
+}
+
+#course .courses .duration {
+  margin-top : 10px;
+  margin-left : 18px;
+  
+}
+
+#course .courses .duration i {
+  padding-right : 5px;
+}
+#course .courses:hover {
+  transform: translateY(-15px);
+}
+
+#course .courses:hover > :not(:hover) {
+  opacity : 0.5s;
+}
+
+#course .paragraph-button-container {
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width : 100%;
+
+}
+
+#course .paragraph-button-container .subtitle {
+  margin : 10px 0;
+  text-align : center;
+}
+
+
+
+
+
+#course .button-container {
+  display : flex;
+  justify-content: flex-end;
+  margin-top : 20px;
+}
+#course button {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+ }
+ 
+ #course button.learn-more {
+  width: 11rem;   /*Adjusted 12 */
+  height: auto;
+ }
+ 
+ #course button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 2.5rem;  /*Ajusted 3*/
+  height: 2.5rem;   /*Adjusted 3*/
+  background: #282936;
+  border-radius: 1.25rem;   /*Adjusted 1.625*/
+  background-color: #ED6A00;
+
+ }
+
+ 
+ 
+ #course button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+
+
+  
+ }
+ 
+ #course button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.5rem;  /*Adjusted 0.625*/
+  width: 0.875rem;  /*Adjusted 1.125*/
+  height: 0.1rem;  /*Adjusted 0.125*/
+  background: none;
+ }
+ 
+ #course button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.23rem;  /*Adjusted-0.29 */
+  right: 0.05rem;   /*Adjusted 0.0625 */
+  width: 0.5rem;  /*Adjusted  0.625*/
+  height: 0.5rem;  /*Adjusted 0.625*/
+  border-top: 0.1rem solid #fff;  /*Adjusted 0.125*/
+  border-right: 0.1rem solid #fff;  /*Adjusted 0.125*/
+  transform: rotate(45deg);
+ }
+ 
+ #course button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.65rem 0 ;  /*Adjusted 0.75 0*/
+  margin:  0 0 0 1.5rem;  /*Adjusted 0 0 0 1.85*/
+  color: #4F59D4;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  
+ }
+ 
+ #course button:hover .circle {
+  width: 100%;
+ }
+ 
+#course button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(0.75rem, 0);  /*Adjusted 1rem,0*/
+ }
+ #course button.learn-more:hover .circle {
+  background-color: #4F59D4;
+ }
+ 
+ #course button:hover .button-text {
+  color: #ED6A00;
+ }
+
+
+  /*********************** ABOUT US  : **************************/
+  #aboutUs .container-fluid {
+    width: 100%;
+    height: fit-content;
+    background: #f1f1f1;
+    background-image: linear-gradient(
+        90deg,
+        transparent 50px,
+        #ffb4b8 50px,
+        #ffb4b8 52px,
+        transparent 52px
+      ),
+      linear-gradient(#e1e1e1 0.1em, transparent 0.1em);
+    background-size: 100% 30px;
+  }
+
+
+  #aboutUs {
+    width : 100%;
+    height : 100vh;
+    background-color: #e1e1e1;
+    display : flex;
+    justify-content: center;
+    align-items : center;
+
+
+  }
+
+  #aboutUs .content img {
+    width : 300px;
+    max-width : 100%;
+    padding : 0 10px;
+    margin-top : 45px;
+    margin-left : 50px;
+  }
+
+  #aboutUs .text {
+    width : 600px;
+    margin-top: 100px;
+    max-width: 100%;
+    padding : 0 10px;
+  }
+
+  #aboutUs .content {
+    width : 1280px;
+    max-width: 95%;
+    margin : 0 auto;
+    display : flex;
+    flex-wrap : wrap;
+    align-items : center;
+    justify-content: space-around;
+
+  }
+
+  #aboutUs .text h1 {
+    color : #4F59D4;
+    font-size : 55px;
+    margin-top : 30px;
+    text-transform: capitalize;
+  }
+
+  #aboutUs .text h5 {
+    color : #ED6A00;
+    margin-left : 20px;
+    font-size : 18px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+
+  }
+  #aboutUs .text p {
+    color : #2D2B38;
+    font-size : 13px;
+    line-height : 28px;
+    letter-spacing: 1px;
+    margin-bottom : 45px;
+  }
+
+  
+
+
+  /*********************** CONTACT US  : **************************/
+ 
+  #contactUs {
+    position : relative;
+    min-height : 100vh;
+    padding : 50px 100px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-color: #F5F5F5;
+  }
+
+  #contactUs .content {
+    max-width : 800px;
+    text-align: center; 
+  }
+
+  #contactUs .content h2 {
+    font-size : 36px;
+    font-weight : bold;
+    color : #ED6A00;
+    padding-bottom : 10px;
+
+  }
+
+  #contactUs .content p {
+    color :#2D2B38;
+    font-size: 15px;
+  }
+  #contactUs .container  {
+    width : 100%;
+    display : flex;
+    justify-content: center ;
+    align-items : center;
+    margin-top : 30px;
+
+  }
+
+  #contactUs .container .contactInfo {
+    width : 50%;
+    display : flex;
+    flex-direction: column;
+  }
+
+  #contactUs .container .contactInfo .box {
+    position : relative;
+    padding : 20px 0;
+    display : flex;
+  }
+
+  #contactUs .container .contactInfo .box .icon   {
+    min-width : 60px;
+    height : 60px;
+    background: #fff;
+    display: flex;
+    justify-content :center;
+    align-items: center;
+    border-radius: 50%;
+    font-size : 22px;
+    color : #ED6A00;
+  }
+
+  #contactUs .container .contactInfo .box .text  {
+    display : flex;
+    margin-left : 20px;
+    font-size : 16px;
+    color : black;
+    flex-direction: column;
+    font-weight : 300;
+
+  }
+
+  #contactUs .contactInfo .box .text h3 {
+    font-weight: 550;
+    color : #4F59D4;
+
+  }
+
+  #contactUs .contactInfo .box .text p {
+    font-size : 17px;
+  }
+
+  #contactUs .contactForm {
+    width : 40%;
+    padding : 40px;
+    background : #fff ;
+
+  }
+
+  #contactUs .contactForm h2 {
+    font-size : 30px;
+    color : #4f59d4;
+    font-weight : 600;
+  }
+
+  #contactUs .contactForm .inputBox {
+    position : relative;
+    width : 100%;
+    margin-top : 13px;
+  }
+
+  #contactUs .contactForm .inputBox input, 
+  #contactUs .contactForm .inputBox textarea {
+    width : 100%;
+    padding : 5px 0;
+    font-size: 16px;
+    margin :10px 0;
+    border : none;
+    border-bottom: 2px solid #333;
+    outline : none;
+    resize : none;
+  }
+  #contactUs .contactForm .inputBox span {
+    position : absolute;
+    left : 0;
+    padding : 5px 0;
+    font-size: 16px;
+    margin : 10px 0;
+    pointer-events: none;
+    transition : 0.5s;
+    color : #666;
+  }
+
+  #contactUs .contactForm .inputBox input:focus ~ span,
+  #contactUs .contactForm .inputBox input:valid ~ span,
+  #contactUs .contactForm .inputBox textarea:focus ~ span,
+  #contactUs .contactForm .inputBox textarea:valid ~ span  {
+    color : #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+  }
+
+  #contactUs .contactForm .inputBox input[type="submit"] {
+    width : 100px;
+    background: #00bcd4;
+    color : #fff;
+    border: none;
+    cursor :pointer;
+    padding : 10px;
+    font-size : 18px;
+  }
+
+
+  #contactUs button {
+    font-family: inherit;
+    font-size: 20px;
+    /* background: royalblue; */
+    background: #ED6A00;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  
+  #contactUs button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #contactUs button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #contactUs button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  #contactUs button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  
+  #contactUs button:hover span {
+    transform: translateX(5em);
+  }
+  
+  #contactUs button:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+  /*********************** RATES  : **************************/
+  #rate {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    flex-direction : column;
+    width : 100%;
+    background-color: white;
+    margin-top  : 40px;
+    
+  }
+
+  #rate .testimonial-heading {
+    letter-spacing : 1px;
+    margin : 30px 0px;
+    padding : 10px 20px;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+  }
+
+  #rate .testimonial-heading h1 {
+    font-size : 2.2rem;
+    font-weight: 500;
+    background-color : #202020;
+    color : #ffffff;
+    padding : 10px 20px;
+  }
+
+  #rate .testimonial-heading span {
+    font-size : 1.3rem;
+    color : #252525;
+    margin-bottom : 10px;
+    letter-spacing: 2px;
+    text-transform : uppercase;
+  }
+  
+  #rate .testimonial-box-container {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    flex-wrap : wrap;
+    width : 100%;
+  }
+
+  #rate .testimonial-box {
+    width : 500px;
+    box-shadow : 2px 2px 20px black;
+    background-color : #ffffff;
+    padding : 20px;
+    margin : 15px;
+    cursor : pointer;
+  }
+
+  #rate .profile-img {
+    width : 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow : hidden;
+    margin-right : 10px;
+  }
+
+  #rate .profile-img img {
+    width : 100%;
+    height: 100%;
+    object-fit : cover;
+    object-position : center;
+  }
+
+  #rate .profile {
+    display : flex;
+    align-items : center;
+  }
+
+  #rate .name-user {
+    display : flex;
+    flex-direction : column;
+  }
+
+  #rate .name-user strong {
+    color : #3d3d3d;
+    font-size : 1.1rem;
+    letter-spacing : 0.5px;
+  }
+
+  #rate .name-user span {
+    color : #979797;
+    font-size : 0.8rem;
+  }
+
+  #rate .reviews {
+    color : #f9d71c;
+  }
+
+  #rate .box-top {
+    display : flex;
+    justify-content: space-between;
+    align-items : center;
+    margin-bottom : 20px;
+  }
+
+#rate .client-comment p {
+  font-size : 0.9rem;
+  color : #4b4b4b;
+}
+
+#rate .testimonial-box:hover {
+  transform : translateY(-10px);
+  transition : all ease 0.3s;
+}
+
+#rate h1 {
+  font-size : 40px;
+  font-weight : 600;
+  padding-bottom : 10px;
+  color : #4F59D4;
+}
+
+
+
+
+/*********************** FIND US  : **************************/
+#findUs .container {
+  width : 100%;
+  height : 100vh;
+  margin-left : 30px;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  flex-direction : column;
+}
+#findUs .container h1 {
+  margin : 60px 0px;
+  margin-left : 20px;
+  font-size : 30px;
+  color : #4F59D4;
+  font-weight: bold;
+}
+#findUs .container iframe {
+  width : 80%;
+  height : 500px;
+  margin-left : 60px;
+  /* filter : invert(100%); */ /*Mode sombre */
+}
+
+  /*********************** EXPLORE  : **************************/
+  #explore {
+  background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url("../images/test7.jpeg");
+  width : 100%;
+  height : 100vh;
+  background-size: cover;
+  background-position: center;
+  display : flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align  : center;
+  padding-top : 40px; 
+  color : white;
+  background-repeat: no-repeat;
+  margin-top : 10px;
+  }
+
+  #explore .explore-content {
+    width : 50%;
+    padding : 50px;
+  }
+
+  #explore .explore-content h1 {
+    font-size : 7vmin;
+    margin : 5px;
+    color : #ED6A00;
+
+  }
+
+  #explore .explore-content p {
+    margin-bottom : 20px;
+  }
+
+  #explore .explore-content .ctn  {
+    margin-top : 40px;
+  }
+
+  #explore .button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: #4F59D4;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+  }
+
+  #explore .explore-button {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #explore .icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #explore .button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+  }
+  
+  #explore .button:hover .icon {
+    transform: translate(4px);
+  }
+  
+  #explore .button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  #explore .button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+  
+
+  

@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!--*********************** NAVBAR : *********************-->
+<app-header2></app-header2>
+
+<!--*********************** INTRO : *********************-->
+<section id="intro" class="intro">
+    <div class="row" >
+        <div class="imgWrapper">
+            <img [src]="course?.picture" alt="{{course?.title}}">
+
+        </div>
+        <div class="contentWrapper">
+            <div class="content">
+                <h2>{{course?.title}} </h2>
+                <p class="number">
+                    <i class="fa-solid fa-play"></i>
+                    {{course?.numberOfVideos}} videos 
+                </p>
+                <p>{{course?.description}}</p>  
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--*********************** VIDEOS  : *********************-->
+<section id="video">
+    <div class="playlist-container">
+        <h1>{{course?.title}} Playlist</h1>
+    <iframe class="youtube-embed"  
+    [src]="sanitizedUrl"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+<!--*********************** DOCUMENTATION LINK  : *********************-->
+
+<section id="doc" class="doc">
+    <h1>
+        To view the greatest and most thorough documentation currently accessible, click this link. This link will walk you through every step and provide you a comprehensive overview of the content to support your learning.
+    </h1>
+    <a [href]="course?.documentationLink" class="btn">Click Here!</a>
+</section>
+<!--*********************** FOOTER : *********************-->
+<app-footer2></app-footer2>
+
+
